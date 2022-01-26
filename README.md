@@ -8,6 +8,7 @@
 
 **Dependencies:**
 - PyQt5
-- matplotlib
+- matplotlib (for the FrequencyMonitor)
 - numpy
-- pyaudio
+- pyaudio 
+- pygame (for the Spectrum Analyzer)
