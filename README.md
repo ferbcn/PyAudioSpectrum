@@ -1,4 +1,4 @@
-# Frequency Analyzer
+# Frequency Monitor and Spectrum Analyzer
 
 **Description:**
 
