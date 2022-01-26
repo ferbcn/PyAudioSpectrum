@@ -71,7 +71,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        self.title = 'Audio Input Monitor and Analyzer'
+        self.title = 'Frequency Monitor and Analyzer'
         self.setWindowTitle(self.title)
 
         self.width = 800
@@ -148,12 +148,23 @@ class MainWindow(QtWidgets.QMainWindow):
         plot_widget.setLayout(plot_layout)
 
         info_layout = QHBoxLayout()
-        self.hz_label = QLabel(" Hz")
-        self.hz_label.setMaximumWidth(100)
+        self.hz_label = QLabel()
+        self.hz_label.setAlignment(Qt.AlignRight)
+        #self.hz_label.setMaximumWidth(100)
         self.hz_label.setFixedHeight(30)
-        self.hz_label.setMargin(20)
-        self.hz_label.setStyleSheet("background-color: #3a3a3a;  color : red")
+        #self.hz_label.setMargin(20)
+        #self.hz_label.setStyleSheet("background-color: #3a3a3a;  color : red")
+        self.hz_label.setStyleSheet("color : red; font-size:20px")
         info_layout.addWidget(self.hz_label)
+
+        self.hz_txt_label = QLabel("Hz")
+        self.hz_txt_label.setAlignment(Qt.AlignLeft)
+        #self.hz_txt_label.setMaximumWidth(100)
+        self.hz_txt_label.setFixedHeight(30)
+        #self.hz_txt_label.setMargin(20)
+        #self.hz_txt_label.setStyleSheet("background-color: #3a3a3a;  color : red")
+        self.hz_txt_label.setStyleSheet("color : red; font-size:20px;")
+        info_layout.addWidget(self.hz_txt_label)
 
         control_layout = QHBoxLayout()
         slider0 = QSlider(Qt.Horizontal)
@@ -237,14 +248,13 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def update_data(self):
         self.hz = self.mpl_canvas.update_plot(self.myaudio.audio)
-        self.hz_label.setText(str(self.hz)+ " Hz")
+        self.hz_label.setText(str(int(self.hz)))
 
     def input_choice(self, choice):
         self.input_device_id = self.get_device_index_by_name(choice)
         if self.monitor_on:
             self.myaudio.stop_stream()
             self.myaudio.start_stream(chunk=self.chunk, device=self.input_device_id)
-
 
     def get_device_index_by_name(self, choice):
         input_devices = self.myaudio.get_input_devices_info()
