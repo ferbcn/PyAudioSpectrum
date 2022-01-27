@@ -12,7 +12,6 @@ matplotlib.use('Qt5Agg')
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 
-#CHUNK = 44100 #1024
 SAMPLE_RATE = 44100
 
 class MplCanvas(FigureCanvasQTAgg):
@@ -41,6 +40,7 @@ class MplCanvas(FigureCanvasQTAgg):
         x = np.arange(0, SAMPLE_RATE/2, SAMPLE_RATE/chunk)
         y = [0 for x in range(int(chunk/2))]
         self.bar1, = self.bx.plot(x, y, 'r-')
+
 
     def update_plot(self, data):
         # update frequency plot
