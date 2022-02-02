@@ -40,7 +40,7 @@ class Spectrum:
 
         size = (SCREENWIDTH, SCREENHEIGHT)
         self.screen = pygame.display.set_mode(size)
-        pygame.display.set_caption("Cells")
+        pygame.display.set_caption("Spectrum Analyzer")
 
         self.fps = fps
 
