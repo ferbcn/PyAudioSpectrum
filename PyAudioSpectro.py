@@ -57,7 +57,7 @@ class Spectrum:
         self.myaudio = AudioIn()
         # print(self.myaudio.get_input_devices_info())
         default_device = self.myaudio.get_default_input_device().get('index')
-        self.myaudio.start_stream(output=False, rate=22050, chunk=1024, device=default_device)
+        self.myaudio.start_stream(output=False, rate=11025, chunk=1024, device=default_device)
         self.show_spectrum = True
 
         # Allowing the user to close the window...
