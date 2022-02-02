@@ -4,7 +4,7 @@
 
 **Screenshots:**
 
-![screenshot](media/analyzer.png)
+![screenshot](media/frequency.png)
 
 ![screenshot](media/spectrum.png)
 
