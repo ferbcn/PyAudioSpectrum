@@ -4,7 +4,7 @@
 
 **Screenshots:**
 
-![screenshot](media/screenshot.png)
+![screenshot](media/analyzer.png)
 
 ![screenshot](media/spectrum.png)
 
