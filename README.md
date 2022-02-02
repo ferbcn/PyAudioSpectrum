@@ -3,6 +3,7 @@
 **Description:**
 
 **Screenshots:**
+![screenshot](media/screenshot.png)
 
 **Features and challenges:**
 
