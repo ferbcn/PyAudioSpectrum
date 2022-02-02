@@ -4,7 +4,7 @@
 
 **Screenshots:**
 
-<img src="https://github.com/ferbcn/PyAudioSpectrum/blob/master/media/screenshot.png?raw=true" width="600" height="400" align="middle">
+![screenshot](media/screenshot.png)
 
 
 **Features and challenges:**
