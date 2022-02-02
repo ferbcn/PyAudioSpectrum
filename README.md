@@ -6,6 +6,7 @@
 
 ![screenshot](media/screenshot.png)
 
+![screenshot](media/spectrum.png)
 
 **Features and challenges:**
 
