@@ -110,12 +110,12 @@ class MainWindow(QtWidgets.QMainWindow):
         self.freq_label = QLabel("Frequency")
         self.freq_label.setAlignment(Qt.AlignCenter)
         self.freq_label.setFixedHeight(50)
-        self.freq_label.setStyleSheet("color : #3a3a3a; font-size:14px;")
+        self.freq_label.setStyleSheet("color : #222222; font-size:14px;")
         control_label_layout.addWidget(self.freq_label)
         self.amp_label = QLabel("Amplitud")
         self.amp_label.setAlignment(Qt.AlignCenter)
         self.amp_label.setFixedHeight(50)
-        self.amp_label.setStyleSheet("color : #777777; font-size:14px;")
+        self.amp_label.setStyleSheet("color : #222222; font-size:14px;")
         control_label_layout.addWidget(self.amp_label)
 
         control_label_widget = QWidget()
@@ -264,6 +264,7 @@ class MplCanvas(FigureCanvasQTAgg):
         self.fig.canvas.flush_events()
 
 
-app = QtWidgets.QApplication(sys.argv)
-w = MainWindow()
-app.exec_()
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    w = MainWindow()
+    app.exec_()
