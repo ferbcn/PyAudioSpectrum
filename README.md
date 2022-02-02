@@ -2,11 +2,10 @@
 
 **Description:**
 
-<img src="https://github.com/ferbcn/PyAudioSpectrum/blob/master/media/screenshot.png?raw=true" width="300" height="200">
-
 **Screenshots:**
 
-![screenshot](media/screenshot.png)
+<img src="https://github.com/ferbcn/PyAudioSpectrum/blob/master/media/screenshot.png?raw=true" width="600" height="400" align="middle">
+
 
 **Features and challenges:**
 
