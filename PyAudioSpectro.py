@@ -1,5 +1,5 @@
 import sys
-from AudioIn import AudioIn
+from AudioInputStream import AudioIn
 import numpy as np
 import pygame
 import random

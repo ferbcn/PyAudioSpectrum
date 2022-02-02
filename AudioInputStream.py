@@ -56,11 +56,20 @@ class AudioIn:
                 pass
         return devices_info
 
+    def get_device_index_by_name(self, name):
+        input_devices = self.get_input_devices_info()
+        device_id = 0
+        for device in input_devices:
+            if device.get('name') == name:
+                device_id = device.get('index')
+        return device_id
+
     def get_default_input_device(self):
         return self.p.get_default_input_device_info()
 
     def get_default_output_device(self):
         return self.p.get_default_output_device_info()
+
 
 if __name__ == '__main__':
     myAudio = AudioIn()
