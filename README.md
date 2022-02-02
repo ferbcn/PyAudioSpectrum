@@ -1,7 +1,7 @@
 # Frequency Monitor and Spectrum Analyzer
 
 **Description:**
-<img src="https://user-images.githubusercontent.com/" width="300" height="200">
+<img src="https://github.com/ferbcn/PyAudioSpectrum/blob/master/media/screenshot.png?raw=true width="300" height="200">
 
 **Screenshots:**
 ![screenshot](media/screenshot.png)
